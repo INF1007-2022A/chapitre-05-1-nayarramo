@@ -21,8 +21,8 @@ def use_prefixes() -> List[str]:
 
 
 def prime_integer_summation() -> int:
-    premier = [1, 2]
-    nb = 3
+    premier = [2, 3]
+    nb = 5
     while len(premier) < 100:
         is_premier = True
         for div in range(2, nb//2):
@@ -30,7 +30,7 @@ def prime_integer_summation() -> int:
                 is_premier = False
         if is_premier:
             premier+=[nb]
-        nb +=1
+        nb +=2
 
     return sum(premier)
 
